@@ -13,3 +13,11 @@ cache:
 
 script:
   - npm run build
+
+deploy:
+  provider: releases
+  api_key: "0b9a0d0a38c749e7d64ba4713c76bd9be30f7891"
+  file: "README.md"
+  skip_cleanup: true
+  on:
+    tags: true
